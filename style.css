@@ -357,6 +357,7 @@ section{
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
    gap: 2rem;
    justify-items: center;
+   overflow: hidden;
 }
 
   /* review */
