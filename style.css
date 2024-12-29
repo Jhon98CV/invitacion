@@ -231,6 +231,22 @@ section{
    background-size: cover;
 }
 
+@media (max-width:450px){
+
+   .invitacion .row .content {
+      background:url(images/marco.png) no-repeat;
+      background-size: 100% 110rem;
+   }
+
+   .invitacion .row .content {
+      padding: 50px 10px 55px 10px !important;
+   }
+
+   .invitacion .row .content p {
+      padding: 0 25px !important;
+   }
+}
+
 .invitacion .row .content {
    flex: 1 1 40rem;
    text-align: center;
