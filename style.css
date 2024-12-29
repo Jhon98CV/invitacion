@@ -360,6 +360,10 @@ section{
    overflow: hidden;
 }
 
+.plan .box-container iframe{
+   border-radius: 20px;
+}
+
   /* review */
 
 .review .review-slider{
