@@ -59,6 +59,7 @@
     <h1 class="heading">Mi Bautizo y corte de pelo</h1>
     <div class="row">
         <div class="content" data-aos="fade-up" data-aos-delay="150">
+            <img src="images/marco-top.png" class="marco-1" alt="">
             <div class="apoderado">
                 <span>Mis Padres</span>
                 <span>Javier Cutipa Vargas</span>
@@ -80,61 +81,61 @@
             <p>Agradecemos anticipadamente su cordial asistencia</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDO3gvtVJkQ7bzaN8bJLdXd5BwhJFT6PHB2prvT3RoJrdwGg/viewform?usp=header" class="btn">Confimar asistencia</a>
             <!--<a onclick="openModal()" class="btn">Confimar asistencia M</a>-->
-
-            <!-- Modal y Overlay -->
-            <div class="modal-overlay" id="modalOverlay">
-                <div class="modal">
-                    <div class="modal-header">
-                        <h2 class="modal-title">
-                            <i class="fas fa-calendar-check"></i>
-                            Confirmación de Asistencia
-                        </h2>
-                        <span class="close-btn" onclick="closeModal()">
-                            <i class="fas fa-times"></i>
-                        </span>
-                    </div>
-                    <form id="asistenciaForm" onsubmit="submitForm(event)">
-                        <div class="form-group">
-                            <label for="nombreCompleto">Nombres y Apellidos</label>
-                            <input type="text" id="nombreCompleto" name="entry.1234567890" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Asistencia</label>
-                            <div class="radio-group">
-                                <input type="radio" id="siAsistire" name="entry.1234567891" value="Si asistiré" required>
-                                <label for="siAsistire">Si asistiré</label>
-                                
-                                <input type="radio" id="noAsistire" name="entry.1234567891" value="No asistiré">
-                                <label for="noAsistire">No asistiré</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="numeroAsistentes">Número de Asistentes</label>
-                            <input type="number" id="numeroAsistentes" name="entry.1234567892" min="1" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="entry.1234567893" rows="4"></textarea>
-                        </div>
-
-                        <div class="button-group">
-                            <button type="button" class="btn-modal btn-cancel" onclick="closeModal()">
-                                <i class="fas fa-times"></i> Cancelar
-                            </button>
-                            <button type="submit" class="btn-modal btn-submit">
-                                <i class="fas fa-paper-plane"></i> Enviar
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
+            <img src="images/marco-bottom.png" class="marco-1" alt="">
         </div>
         <div class="image" data-aos="fade-down" data-aos-delay="300">
             <img src="images/about-1.jpg" alt="">
+        </div>
+
+        <!-- Modal y Overlay -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <div class="modal-header">
+                    <h2 class="modal-title">
+                        <i class="fas fa-calendar-check"></i>
+                        Confirmación de Asistencia
+                    </h2>
+                    <span class="close-btn" onclick="closeModal()">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                <form id="asistenciaForm" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <label for="nombreCompleto">Nombres y Apellidos</label>
+                        <input type="text" id="nombreCompleto" name="entry.1234567890" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Asistencia</label>
+                        <div class="radio-group">
+                            <input type="radio" id="siAsistire" name="entry.1234567891" value="Si asistiré" required>
+                            <label for="siAsistire">Si asistiré</label>
+                            
+                            <input type="radio" id="noAsistire" name="entry.1234567891" value="No asistiré">
+                            <label for="noAsistire">No asistiré</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numeroAsistentes">Número de Asistentes</label>
+                        <input type="number" id="numeroAsistentes" name="entry.1234567892" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="entry.1234567893" rows="4"></textarea>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="btn-modal btn-cancel" onclick="closeModal()">
+                            <i class="fas fa-times"></i> Cancelar
+                        </button>
+                        <button type="submit" class="btn-modal btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>

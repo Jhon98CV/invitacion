@@ -226,11 +226,18 @@ section{
    border-radius: 20px;
 }
 
-.invitacion .row .content {
-   background:url(images/marco.png) no-repeat;
-   background-size: cover;
+.invitacion .row .content .marco-1 {
+   width: 100%;
+   height: auto;
+   margin: -30px 0;
 }
 
+/*.invitacion .row .content {
+   background:url(images/marco.png) no-repeat;
+   background-size: contain;
+   background-position: center;
+}
+/*
 @media (max-width:450px){
 
    .invitacion .row .content {
@@ -247,10 +254,17 @@ section{
    }
 }
 
+@media (max-width:769px){
+
+   .invitacion .row .content {
+      background:url(images/marco.png) no-repeat;
+      background-size: cover;
+   }
+}*/
+
 .invitacion .row .content {
    flex: 1 1 40rem;
    text-align: center;
-   padding: 100px;
 }
 
 .invitacion .row .content h2 {
@@ -298,6 +312,13 @@ section{
 .invitacion .row .content .informacion .cards span {
    font-size: 4rem;
 }
+
+@media (max-width:769px){
+   .invitacion .row .content .informacion .cards {
+      font-size: 1.5rem;
+   }
+}
+
   /* end */
 
   /* service */
