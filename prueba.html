@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Asistencia</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], 
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <form name="asistente-form" id="asistenciaForm">
+        <div class="form-group">
+            <label for="nombreCompleto">Nombres y Apellidos:</label>
+            <!-- El name debe coincidir con el ID de Google Forms -->
+            <input type="text" id="nombreCompleto" name="Nombres" required>
+        </div>
+
+        <div class="form-group">
+            <label>¿Asistirás al evento?</label>
+            <div class="radio-group">
+                <!-- El name debe ser el mismo para ambos radio buttons -->
+                <input type="radio" id="siAsistire" name="Confirmacion" value="Si asistiré" required>
+                <label for="siAsistire">Si asistiré</label>
+
+                <input type="radio" id="noAsistire" name="Confirmacion" value="No asistiré">
+                <label for="noAsistire">No asistiré</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="numeroAsistentes">Número de asistentes:</label>
+            <input type="number" id="numeroAsistentes" name="Asistentes" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje (opcional):</label>
+            <textarea id="mensaje" name="Mensaje" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="submit">Enviar</button>
+    </form>
+</body>
+
+<script>
+    document.getElementById('asistenciaForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita el envío estándar del formulario
+
+    // Crear un objeto con los datos del formulario
+    const datosFormulario = {
+        nombre: document.getElementById('nombreCompleto').value,
+        email: document.getElementById('noAsistire').value,
+        email: document.getElementById('siAsistire').value,
+        comentarios: document.getElementById('numeroAsistentes').value,
+        comentarios: document.getElementById('mensaje').value
+    };
+
+    // Mostrar los datos en la consola
+    console.log("Datos del formulario:", datosFormulario);
+  });
+  </script>
+</html>
